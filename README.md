@@ -74,3 +74,5 @@ Pull requests and suggestions are welcome! Please open an issue or PR for improv
 
 ## License
 MIT License. Free for personal and commercial use. 
+
+<img width="1905" height="927" alt="image" src="https://github.com/user-attachments/assets/4f378f07-45f4-48ae-be87-6530ccba9932" />
