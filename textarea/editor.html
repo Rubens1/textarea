@@ -1,0 +1,86 @@
+
+  <div class="editor-container">
+    <div class="toolbar">
+      <!-- Text formatting -->
+      <div class="toolbar-group">
+        <button class="toolbar-btn" data-command="bold" title="Bold (Ctrl+B)"><i class="fas fa-bold"></i></button>
+        <button class="toolbar-btn" data-command="italic" title="Italic (Ctrl+I)"><i class="fas fa-italic"></i></button>
+        <button class="toolbar-btn" data-command="underline" title="Underline (Ctrl+U)"><i class="fas fa-underline"></i></button>
+        <button class="toolbar-btn" data-command="strikeThrough" title="Strikethrough"><i class="fas fa-strikethrough"></i></button>
+      </div>
+      <!-- Alignment -->
+      <div class="toolbar-group">
+        <button class="toolbar-btn" data-command="justifyLeft" title="Align left"><i class="fas fa-align-left"></i></button>
+        <button class="toolbar-btn" data-command="justifyCenter" title="Center"><i class="fas fa-align-center"></i></button>
+        <button class="toolbar-btn" data-command="justifyRight" title="Align right"><i class="fas fa-align-right"></i></button>
+        <button class="toolbar-btn" data-command="justifyFull" title="Justify"><i class="fas fa-align-justify"></i></button>
+      </div>
+      <!-- Lists -->
+      <div class="toolbar-group">
+        <button class="toolbar-btn" data-command="insertUnorderedList" title="Unordered list"><i class="fas fa-list-ul"></i></button>
+        <button class="toolbar-btn" data-command="insertOrderedList" title="Ordered list"><i class="fas fa-list-ol"></i></button>
+      </div>
+      <!-- Links and images -->
+      <div class="toolbar-group">
+        <button class="toolbar-btn" id="linkBtn" title="Insert link"><i class="fas fa-link"></i></button>
+        <button class="toolbar-btn" id="imageBtn" title="Insert image"><i class="fas fa-image"></i></button>
+      </div>
+      <!-- Image resizing -->
+      <div class="toolbar-group" id="imageResizeGroup" style="display: none;">
+        <button class="toolbar-btn" id="decreaseImageSize" title="Decrease image size"><i class="fas fa-compress-alt"></i></button>
+        <button class="toolbar-btn" id="increaseImageSize" title="Increase image size"><i class="fas fa-expand-alt"></i></button>
+        <button class="toolbar-btn" id="resetImageSize" title="Original size"><i class="fas fa-undo"></i></button>
+      </div>
+      <!-- Colors -->
+      <div class="toolbar-group">
+        <input type="color" id="textColor" class="color-picker" title="Text color">
+        <input type="color" id="bgColor" class="color-picker" title="Background color">
+      </div>
+      <!-- Font -->
+      <div class="toolbar-group">
+        <select id="fontFamily" class="font-select">
+          <option value="Arial">Arial</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Verdana">Verdana</option>
+        </select>
+        <select id="fontSize" class="font-select">
+          <option value="1">Very small</option>
+          <option value="2">Small</option>
+          <option value="3" selected>Normal</option>
+          <option value="4">Large</option>
+          <option value="5">Very large</option>
+          <option value="6">Huge</option>
+          <option value="7">Maximum</option>
+        </select>
+      </div>
+      <!-- Actions -->
+      <div class="toolbar-group">
+        <button class="toolbar-btn" data-command="undo" title="Undo (Ctrl+Z)"><i class="fas fa-undo"></i></button>
+        <button class="toolbar-btn" data-command="redo" title="Redo (Ctrl+Y)"><i class="fas fa-redo"></i></button>
+        <button class="toolbar-btn" data-command="selectAll" title="Select all (Ctrl+A)"><i class="fas fa-expand-arrows-alt"></i></button>
+      </div>
+    </div>
+    <div class="editor-content" id="editor" contenteditable="true"></div>
+  </div>
+  <!-- Link modal -->
+  <div id="linkModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Insert Link</h2>
+      <input type="text" id="linkUrl" placeholder="Enter the link URL">
+      <input type="text" id="linkText" placeholder="Link text (optional)">
+      <button id="insertLink" class="action-btn primary">Insert</button>
+    </div>
+  </div>
+  <!-- Image modal -->
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Insert Image</h2>
+      <input type="text" id="imageUrl" placeholder="Enter the image URL">
+      <input type="text" id="imageAlt" placeholder="Alternative text (optional)">
+      <button id="insertImage" class="action-btn primary">Insert</button>
+    </div>
+  </div>
