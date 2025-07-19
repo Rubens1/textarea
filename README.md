@@ -3,7 +3,7 @@
 ```
 project-root/
 │
-├── ckeditor/
+├── textarea/
 │   ├── editor.html
 │   ├── css/
 │   │   └── styles.css
