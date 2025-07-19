@@ -10,7 +10,7 @@ project-root/
 │   ├── js/
 │   │   └── script.js   
 ├── js/
-│   └── injetarEditor.js   # (optional, for your own integration)
+│   └── injetarEditor.js 
 ├── index.html
 ├── README.md
 ```
